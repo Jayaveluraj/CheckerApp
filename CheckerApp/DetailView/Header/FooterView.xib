@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="xGG-Tb-H1j" customClass="FooterView" customModule="CheckerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="49" translatesAutoresizingMaskIntoConstraints="NO" id="tTL-ey-Qf9">
+                    <rect key="frame" x="99" y="40" width="149" height="50"/>
+                    <subviews>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4YI-8d-SJ9">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="1" green="0.40466558180000001" blue="0.25259092309999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="T6B-AA-hUq"/>
+                                <constraint firstAttribute="height" constant="50" id="g5x-1D-CCJ"/>
+                            </constraints>
+                            <state key="normal" image="sms"/>
+                        </button>
+                        <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QhF-hR-mEO">
+                            <rect key="frame" x="99" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Z2E-Es-53B"/>
+                                <constraint firstAttribute="width" constant="50" id="wdr-Qx-U1G"/>
+                            </constraints>
+                            <state key="normal" image="gift"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="4YI-8d-SJ9" firstAttribute="leading" secondItem="tTL-ey-Qf9" secondAttribute="leading" id="Ac1-Lk-k4E"/>
+                        <constraint firstItem="4YI-8d-SJ9" firstAttribute="top" secondItem="tTL-ey-Qf9" secondAttribute="top" id="EKQ-fa-gNZ"/>
+                        <constraint firstAttribute="bottom" secondItem="QhF-hR-mEO" secondAttribute="bottom" id="F3i-ir-pkM"/>
+                        <constraint firstItem="QhF-hR-mEO" firstAttribute="top" secondItem="tTL-ey-Qf9" secondAttribute="top" id="WlY-7s-4my"/>
+                        <constraint firstAttribute="bottom" secondItem="4YI-8d-SJ9" secondAttribute="bottom" id="XpJ-eL-Fbm"/>
+                        <constraint firstAttribute="trailing" secondItem="QhF-hR-mEO" secondAttribute="trailing" id="gB4-fi-bIS"/>
+                        <constraint firstAttribute="height" constant="50" id="pHL-kF-gID"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="tTL-ey-Qf9" firstAttribute="centerY" secondItem="xGG-Tb-H1j" secondAttribute="centerY" id="fsa-9l-NTL"/>
+                <constraint firstItem="tTL-ey-Qf9" firstAttribute="centerX" secondItem="xGG-Tb-H1j" secondAttribute="centerX" id="yWG-FA-ygD"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="eGc-cL-8Ci"/>
+            <connections>
+                <outlet property="btnDropBox" destination="QhF-hR-mEO" id="qVN-IH-BMs"/>
+                <outlet property="btnMessage" destination="4YI-8d-SJ9" id="0gt-QQ-mrJ"/>
+            </connections>
+            <point key="canvasLocation" x="-352" y="-292"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="gift" width="180" height="195"/>
+        <image name="sms" width="512" height="512"/>
+    </resources>
+</document>
